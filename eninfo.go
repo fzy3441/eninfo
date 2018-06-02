@@ -2,6 +2,7 @@ package eninfo
 
 import ()
 
+// 更改新处理方式 用妆饰模型处理该功能，可使新功能拥有自动排列功能
 func EnValue(passwd string, value []byte, enType int) (*EnData, error) {
 	obj := _getEnObj(enType)
 	l := len(value)
